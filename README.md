@@ -1,3 +1,5 @@
+**阅读[中文](README_zh.md)**
+
 REINVENT 4
 ==========
 
