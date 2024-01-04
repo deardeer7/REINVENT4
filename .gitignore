@@ -14,3 +14,8 @@ mprofile_*.dat
 /reinvent.egg-info/*
 /reinvent.egg-info/dependency_links.txt
 /build/
+
+
+# tf log
+*.chkpt
+events.out.tfevents.*
