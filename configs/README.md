@@ -7,21 +7,21 @@
 对带有相关负对数似然 (NLL) 的 SMILES 进行采样。
 
 | 参数               | 描述                                                         |
-|---|---|
-|run_type|设置为 "sampling"|
-|use_cuda|"true" 表示使用 GPU，"false" 表示使用 CPU |
-|json_out_config|TOML 文件以 JSON 格式的文件名|
-|[parameters]|开始参数部分|
-|model_file|从中采样的模型文件的文件名|
-|smiles_file|Lib/LinkInvent 和 Mol2Mol 的输入 SMILES 的文件名|
-|sample_strategy|仅 Mol2Mol：“束搜索”或“多项式”|
-|output_file|包含示例 SMILES 和 NLLs 的 CSV 文件的文件名|
-|num_smiles|需要采样的 SMILES 数量，注意：这将乘以输入 SMILES 的数量|
-|unique_molecules|如果“true”仅返回唯一的规范化 SMILES|
-|randomize_smiles|如果“true”随机打乱输入 SMILES 中的原子|
-|tb_logdir|如果不为空，则为 TensorBoard 日志记录目录的名称|
-|temperature|仅 Mol2Mol：默认 1.0|
-|target_smiles_path|仅 Mol2Mol：如果不为空，则表示 SMILES 的文件名，检查生成提供的 SMILES 的 NLL|
+|--------------------|--------------------------------------------------------------|
+| run_type           | 设置为 "sampling"                                            |
+| use_cuda           | "true" 表示使用 GPU，"false" 表示使用 CPU                     |
+| json_out_config    | TOML 文件以 JSON 格式的文件名                                 |
+| [parameters]       | 开始参数部分                                                 |
+| model_file         | 从中采样的模型文件的文件名                                    |
+| smiles_file        | Lib/LinkInvent 和 Mol2Mol 的输入 SMILES 的文件名               |
+| sample_strategy    | 仅 Mol2Mol：“束搜索”或“多项式”                               |
+| output_file        | 包含示例 SMILES 和 NLLs 的 CSV 文件的文件名                    |
+| num_smiles         | 需要采样的 SMILES 数量，注意：这将乘以输入 SMILES 的数量        |
+| unique_molecules   | 如果“true”仅返回唯一的规范化 SMILES                           |
+| randomize_smiles   | 如果“true”随机打乱输入 SMILES 中的原子                         |
+| tb_logdir          | 如果不为空，则为 TensorBoard 日志记录目录的名称                |
+| temperature        | 仅 Mol2Mol：默认 1.0                                         |
+| target_smiles_path | 仅 Mol2Mol：如果不为空，则表示 SMILES 的文件名，检查生成提供的 SMILES 的 NLL |
 
 ## 评分（Scoring）
 
